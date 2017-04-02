@@ -38,6 +38,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPlayerInfo.cs" />
+    <Compile Include="IPlayerManager.cs" />
+    <Compile Include="IPlayerRegistrationInfo.cs" />
     <Compile Include="Test\PrizeDistributionForPayoutPool.cs" />
     <Compile Include="WinningsCalculator.cs" />
   </ItemGroup>
