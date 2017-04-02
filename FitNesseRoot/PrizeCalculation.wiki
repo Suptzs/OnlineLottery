@@ -1,0 +1,16 @@
+---
+Test
+---
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
+!define TEST_RUNNER {dotnet2\Runner.exe}
+!path C:\Users\Dany\Documents\Visual Studio 2017\Projects\OnlineLottery\OnlineLottery\bin\Release\OnlineLottery.dll
+
+!|import|
+|OnlineLottery.Test|
+
+!|Payout Table|
+|Payout Pool|Winning Combination|Pool Percentage?|Prize Pool?|
+|2000000   |6                 |68             |1360000   |
+|2000000   |5                 |10             |200000    |
+|2000000   |4                 |10             |200000    |
+|2000000   |3                 |12             |240000    |
