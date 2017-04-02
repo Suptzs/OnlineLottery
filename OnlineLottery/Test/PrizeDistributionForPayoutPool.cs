@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace OnlineLottery.Test
+﻿namespace OnlineLottery.Test
 {
-    public class PayoutTable : fit.ColumnFixture
+    public class PrizeDistributionForPayoutPool : fit.ColumnFixture
     {
         private readonly WinningsCalculator _wc = new WinningsCalculator();
 

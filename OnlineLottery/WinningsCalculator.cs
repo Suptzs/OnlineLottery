@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OnlineLottery
+﻿namespace OnlineLottery
 {
     public class WinningsCalculator
     {

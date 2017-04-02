@@ -38,7 +38,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Test\PayoutTable.cs" />
+    <Compile Include="Test\PrizeDistributionForPayoutPool.cs" />
     <Compile Include="WinningsCalculator.cs" />
   </ItemGroup>
   <ItemGroup>

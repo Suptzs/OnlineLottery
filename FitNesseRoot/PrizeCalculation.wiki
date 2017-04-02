@@ -8,9 +8,13 @@ Test
 !|import|
 |OnlineLottery.Test|
 
-!|Payout Table|
-|Payout Pool|Winning Combination|Pool Percentage?|Prize Pool?|
-|2000000   |6                 |68             |1360000   |
-|2000000   |5                 |10             |200000    |
-|2000000   |4                 |10             |200000    |
-|2000000   |3                 |12             |240000    |
+The prize pool is divided among the winners using the following distribution for winning combinations (number of correct hits out of six chosen numbers).
+Example below is for $2M payout pool.
+
+!|Prize Distribution for Payout Pool|2'000'000|
+|Winning Combination|Pool Percentage?|Prize Pool?|
+|6                 |68             |1'360'000   |
+|5                 |10             |200'000     |
+|4                 |10             |200'000     |
+|3                 |12             |240'000     |
+|2                 |0              |0           |
