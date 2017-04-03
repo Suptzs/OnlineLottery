@@ -286,3 +286,13 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# FitNesse
+FitNesseRoot/FitNesse/
+FitNesseRoot/RecentChanges/
+FitNesseRoot/RecentChanges.wiki
+FitNesseRoot/TemplateLibrary/
+FitnesseRoot/files
+FitNesseRoot/files/testResults/
+FitnesseRoot/ErrorLog
+*.zip
