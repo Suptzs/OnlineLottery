@@ -1,0 +1,23 @@
+---
+Test
+---
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
+!define TEST_RUNNER {dotnet2\Runner.exe}
+!path C:\Users\Dany\Documents\Visual Studio 2017\Projects\OnlineLottery\OnlineLottery\bin\Release\OnlineLottery.dll
+
+!|import|
+|OnlineLottery.Test|
+
+!|Set Up Test Environment|
+
+!|Player Registers|
+|Username|Password|Player Id?|
+|Suptzs|lurchi123|>>player|
+
+!|Check Stored Details|
+|Player Id|Username?|Balance?|
+|<<player|Suptzs|0|
+
+!|Check Log In|
+|Username|Password|Can log in?|
+|Suptzs|lurchi123|yes|
