@@ -1,4 +1,4 @@
-|PlayerRegistration||23:07:07 Mo, Apr 03, 2017|
+|PlayerRegistration||01:23:02 Di, Apr 04, 2017|
 |OnlineLottery||23:01:08 Mo, Apr 03, 2017|
 |PrizeCalculation||23:37:38 So, Apr 02, 2017|
 |FrontPage||23:07:14 So, Apr 02, 2017|

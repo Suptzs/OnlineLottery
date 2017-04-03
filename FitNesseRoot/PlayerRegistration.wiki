@@ -9,15 +9,24 @@ Test
 |OnlineLottery.Test|
 
 !|Set Up Test Environment|
-
-!|Player Registers|
-|Username|Password|Player Id?|
-|Suptzs|lurchi123|>>player|
-
-!|Check Stored Details|
-|Player Id|Username?|Balance?|
-|<<player|Suptzs|0|
-
-!|Check Log In|
-|Username|Password|Can log in?|
-|Suptzs|lurchi123|yes|
+!3 Player cannot register if the requested username already exists
+|Player Registers|
+|Username|Password|Name|Address|City|Postcode|Country|Player Id?|
+|johnsmith|test123|John Smith|44 Ranelagh Way|London|NN1EE1|UK|>>player|
+|johnsmith|test334|Smith 2   |55 Ranelagh Way|London|NN2EE2|UK|exception["Duplicate username"]|
+|hawking|test123|Stephen Hawking|Mars Rover|Mars|abc|USA|>>player2|
+|jonny|test123|Jonny Depp|1 Rum Road|Carrebean|abcd|USA|>>player3|
+!3 Upon registration, player details are stored correctly in the system, the player can log in, and the balance on his account is 0
+|Check Stored Details For |player|
+|Username?|Name?|Address?|City?|Postcode?|Country?|Balance?|
+|johnsmith|John Smith|44 Ranelagh Way|London|NN1EE1|UK|0|
+!3 Player cannot log-in with an incorrect password
+|Check Log In|
+|Username|Password|Logged in as player id?|
+|johnsmith|test123|<<player|
+|johnsmith|test334|exception["Invalid password"]|
+|unknown  |irrelevant|exception["Unknown user"]|
+!3 Every player has a unique id
+|Check User Ids for Uniqueness|
+|Player1|Player2|Player3|Are ids unique?|
+|<<player|<<player2|<<player3|yes|

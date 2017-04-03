@@ -14,25 +14,18 @@ namespace OnlineLottery.Test
 
     public class PlayerRegisters : ColumnFixture
     {
-        public string Username = "";
-        public string Password = "";
-
-        public int PlayerId()
+        public class ExtendedPlayerRegistrationInfo : PlayerRegistrationInfo
         {
-            return SetUpTestEnvironment.PlayerManager.RegisterPlayer(new PlayerRegistrationInfo
-            {
-                Username = Username,
-                Password = Password
-            });
+            public int PlayerId() => SetUpTestEnvironment.PlayerManager.RegisterPlayer(this);
         }
+
+        private readonly ExtendedPlayerRegistrationInfo _extendedRegInfo = new ExtendedPlayerRegistrationInfo();
+        public override object GetTargetObject() => _extendedRegInfo;
     }
 
-    public class CheckStoredDetails : ColumnFixture
+    public class CheckStoredDetailsFor : ColumnFixture
     {
-        public int PlayerId;
-        public string Username => SetUpTestEnvironment.PlayerManager.GetPlayer(PlayerId).Username;
-
-        public decimal Balance => SetUpTestEnvironment.PlayerManager.GetPlayer(PlayerId).Balance;
+        public override object GetTargetObject() => SetUpTestEnvironment.PlayerManager.GetPlayer(Symbols.GetValueAs<int>("player"));
     }
 
     public class CheckLogIn : ColumnFixture
@@ -40,17 +33,15 @@ namespace OnlineLottery.Test
         public string Username = "";
         public string Password = "";
 
-        public bool CanLogIn()
-        {
-            try
-            {
-                SetUpTestEnvironment.PlayerManager.LogIn(Username, Password);
-                return true;
-            }
-            catch (ApplicationException)
-            {
-                return false;
-            }
-        }
+        public int LoggedInAsPlayerId() => SetUpTestEnvironment.PlayerManager.LogIn(Username, Password);
+    }
+
+    public class CheckUserIdsForUniqueness : ColumnFixture
+    {
+        public int Player1;
+        public int Player2;
+        public int Player3;
+
+        public bool AreIdsUnique() => Player1 != Player2 && Player1 != Player3 && Player2 != Player3;
     }
 }
