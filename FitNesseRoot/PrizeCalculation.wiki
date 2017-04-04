@@ -3,7 +3,7 @@ Test
 ---
 !define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
 !define TEST_RUNNER {dotnet2\Runner.exe}
-!path C:\Users\Dany\Documents\Visual Studio 2017\Projects\OnlineLottery\OnlineLottery\bin\Release\OnlineLottery.dll
+!path ${RootPath}\OnlineLottery\bin\Release\OnlineLottery.dll
 
 !|import|
 |OnlineLottery.Test|
