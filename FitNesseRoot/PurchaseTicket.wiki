@@ -1,0 +1,29 @@
+---
+Test
+---
+OnlineLottery
+
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
+!define TEST_RUNNER {dotnet2\Runner.exe}
+!path ${RootPath}\OnlineLottery\bin\Release\OnlineLottery.dll
+
+!|import|
+|OnlineLottery.Test.PurchaseTicket|
+
+|Set Up Test Environment|
+|Create Draw|
+|01.01.2017|
+
+|Player Registers|
+|Username|Password|Name|Address|City|Postcode|Country|Player Id?|
+|john|test123|John Smith|44 Ranelagh Way|London|NN1EE1|UK|>>player|
+
+!3 A player registers, transfers money into the account and purchases a ticket. The ticket should be registered for the correct draw in the system, and the account balance and pool size will be adjusted for the ticket value
+
+|Purchase Ticket|
+|Player|john|Deposits|100|dollars with card|4111111111111111|and expiry date|01/18|
+|Player|john|has|100|dollars|
+|Player|john|buys a ticket with numbers|1,3,4,5,8,10| for draw on|01.01.2017|
+|Check|Pool value for draw on|01.01.2017|is|10|
+|Check|Account balance for|john|is|90|
+|Ticket with numbers|1,3,4,5,8,10|for|10|dollars is registered for player|john|for draw on|01.01.2017|

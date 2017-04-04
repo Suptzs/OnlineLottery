@@ -2,3 +2,5 @@
 
 PrizeCalculation
 PlayerRegistration
+PurchaseTicket
+PurchaseTicketNotEnoughMoney
