@@ -38,12 +38,22 @@ namespace OnlineLottery
 
         public void AdjustBalance(int playerId, decimal amount)
         {
-            throw new System.NotImplementedException();
+            var playerInfo = _players[playerId];
+            if(PlayerHasNotEnoughFunds(playerInfo, amount))
+                throw new NotEnoughFundsException();
+            playerInfo.Balance += amount;
+        }
+
+        private static bool PlayerHasNotEnoughFunds(IPlayerInfo playerInfo, decimal amount)
+        {
+            return amount < 0 && playerInfo.Balance < -amount;
         }
 
         public void DepositWithCard(int playerId, string cardNumber, string expiryDate, decimal amount)
         {
-            throw new System.NotImplementedException();
+            if(cardNumber.EndsWith("2")) throw new TransactionDeclinedException();
+
+            _players[playerId].Balance += amount;
         }
     }
 }

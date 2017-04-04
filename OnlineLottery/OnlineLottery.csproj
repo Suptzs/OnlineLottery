@@ -38,14 +38,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Draw.cs" />
+    <Compile Include="IDraw.cs" />
+    <Compile Include="IDrawManager.cs" />
     <Compile Include="IPlayerInfo.cs" />
     <Compile Include="IPlayerManager.cs" />
     <Compile Include="IPlayerRegistrationInfo.cs" />
+    <Compile Include="ITicket.cs" />
     <Compile Include="PlayerInfo.cs" />
     <Compile Include="PlayerManager.cs" />
+    <Compile Include="DrawManager.cs" />
     <Compile Include="Test\PlayerRegistration.cs" />
     <Compile Include="PlayerRegistrationInfo.cs" />
     <Compile Include="Test\PrizeDistributionForPayoutPool.cs" />
+    <Compile Include="Test\PurchaseTicket.cs" />
+    <Compile Include="Ticket.cs" />
     <Compile Include="WinningsCalculator.cs" />
   </ItemGroup>
   <ItemGroup>

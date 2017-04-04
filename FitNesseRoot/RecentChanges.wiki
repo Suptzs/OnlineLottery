@@ -1,4 +1,6 @@
-|PlayerRegistration||01:23:02 Di, Apr 04, 2017|
-|OnlineLottery||23:01:08 Mo, Apr 03, 2017|
-|PrizeCalculation||23:37:38 So, Apr 02, 2017|
+|PurchaseTicketNotEnoughMoney||23:54:35 Di, Apr 04, 2017|
+|OnlineLottery||23:45:48 Di, Apr 04, 2017|
+|PurchaseTicket||23:41:00 Di, Apr 04, 2017|
+|PlayerRegistration||21:30:45 Di, Apr 04, 2017|
+|PrizeCalculation||21:30:32 Di, Apr 04, 2017|
 |FrontPage||23:07:14 So, Apr 02, 2017|
