@@ -1,6 +1,6 @@
+|OnlineLottery.PurchaseTicketTestSuite.SetUp||01:35:39 Do, Apr 06, 2017|
 |OnlineLottery.PrizeCalculation||01:03:51 Do, Apr 06, 2017|
 |OnlineLottery.PlayerRegistration||01:02:47 Do, Apr 06, 2017|
-|OnlineLottery.PurchaseTicketTestSuite.SetUp||24:59:43 Do, Apr 06, 2017|
 |OnlineLottery||24:54:42 Do, Apr 06, 2017|
 |OnlineLottery.PageHeader||24:52:09 Do, Apr 06, 2017|
 |OnlineLottery.PurchaseTicketTestSuite||24:38:18 Do, Apr 06, 2017|

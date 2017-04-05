@@ -4,12 +4,12 @@ using fitlibrary;
 
 namespace OnlineLottery.Test.PurchaseTicket
 {
-    public class SetUpTestEnvironment : DoFixture
+    public class SetUpPurchaseTicketTestEnvironment : DoFixture
     {
         internal static IPlayerManager PlayerManager;
         internal static IDrawManager DrawManager;
 
-        public SetUpTestEnvironment()
+        public SetUpPurchaseTicketTestEnvironment()
         {
             PlayerManager = new PlayerManager();
             DrawManager = new DrawManager(PlayerManager);
@@ -29,8 +29,8 @@ namespace OnlineLottery.Test.PurchaseTicket
 
     public class PurchaseTicket : DoFixture
     {
-        private readonly IDrawManager _drawManager = SetUpTestEnvironment.DrawManager;
-        private readonly IPlayerManager _playerManager = SetUpTestEnvironment.PlayerManager;
+        private readonly IDrawManager _drawManager = SetUpPurchaseTicketTestEnvironment.DrawManager;
+        private readonly IPlayerManager _playerManager = SetUpPurchaseTicketTestEnvironment.PlayerManager;
 
         public bool PlayerHasDollars(string username, decimal amount) => _playerManager.GetPlayer(username).Balance == amount;
 
