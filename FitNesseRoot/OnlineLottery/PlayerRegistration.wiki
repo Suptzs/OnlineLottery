@@ -1,14 +1,8 @@
 ---
 Test
 ---
-OnlineLottery
-
-!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
-!define TEST_RUNNER {dotnet2\Runner.exe}
-!path ${RootPath}\OnlineLottery\bin\Release\OnlineLottery.dll
-
 !|import|
-|OnlineLottery.Test|
+|OnlineLottery.Test.PlayerRegistration|
 
 !|Set Up Test Environment|
 !3 Player cannot register if the requested username already exists

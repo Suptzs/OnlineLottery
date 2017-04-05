@@ -1,0 +1,10 @@
+---
+Test
+---
+!3 When a user selects a negative amount of tickets, the ticket purchase should be refused. The ticket should not be registered, account balance and pool value remain untouched.
+
+|Purchase Ticket|
+|reject|Player|john|buys|-2|tickets with numbers|1,3,4,5,8,10| for draw on|01.01.2017|
+|Check|Pool value for draw on|01.01.2017|is|0|
+|Check|Account balance for|john|is|50|
+|not|Ticket with numbers|1,3,4,5,8,10|for|-20|dollars is registered for player|john|for draw on|01.01.2017|

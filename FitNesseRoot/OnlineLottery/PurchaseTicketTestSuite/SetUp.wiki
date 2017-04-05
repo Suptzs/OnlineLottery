@@ -1,0 +1,6 @@
+!|import|
+|OnlineLottery.Test.PurchaseTicket|
+
+|Set Up Test Environment|
+|Create Draw|01.01.2017|
+|New player|john|registers and deposits|50|dollars|

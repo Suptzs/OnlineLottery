@@ -1,7 +1,8 @@
+---
+Suite
+---
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
+!define TEST_RUNNER {dotnet2\Runner.exe}
+!path ${RootPath}\OnlineLottery\bin\Release\OnlineLottery.dll
 !1 Online Lottery
-
-PrizeCalculation
-PlayerRegistration
-PurchaseTicket
-PurchaseTicketNotEnoughMoney
-PurchaseTicketInvalidUserInputs
+!contents -R

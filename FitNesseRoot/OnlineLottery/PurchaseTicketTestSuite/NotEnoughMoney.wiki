@@ -1,19 +1,6 @@
 ---
 Test
 ---
-OnlineLottery
-
-!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
-!define TEST_RUNNER {dotnet2\Runner.exe}
-!path ${RootPath}\OnlineLottery\bin\Release\OnlineLottery.dll
-
-!|import|
-|OnlineLottery.Test.PurchaseTicket|
-
-|Set Up Test Environment|
-|Create Draw|01.01.2017|
-|New player|john|registers and deposits|50|dollars|
-
 !3 When there is not enough money in the account, the ticket purchase should be refused. The ticket should not be registered, account balance and pool value remain untouched.
 
 |Purchase Ticket|
