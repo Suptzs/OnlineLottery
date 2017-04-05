@@ -1,6 +1,7 @@
-|PurchaseTicketNotEnoughMoney||23:54:35 Di, Apr 04, 2017|
-|OnlineLottery||23:45:48 Di, Apr 04, 2017|
-|PurchaseTicket||23:41:00 Di, Apr 04, 2017|
+|PurchaseTicketInvalidUserInputs||22:21:46 Mi, Apr 05, 2017|
+|OnlineLottery||22:11:13 Mi, Apr 05, 2017|
+|PurchaseTicket||22:03:01 Mi, Apr 05, 2017|
+|PurchaseTicketNotEnoughMoney||22:02:13 Mi, Apr 05, 2017|
 |PlayerRegistration||21:30:45 Di, Apr 04, 2017|
 |PrizeCalculation||21:30:32 Di, Apr 04, 2017|
 |FrontPage||23:07:14 So, Apr 02, 2017|

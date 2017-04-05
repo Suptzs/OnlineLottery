@@ -11,17 +11,13 @@ OnlineLottery
 |OnlineLottery.Test.PurchaseTicket|
 
 |Set Up Test Environment|
-|Create Draw|
-|01.01.2017|
-
-|Player Registers|
-|Username|Password|Name|Address|City|Postcode|Country|Player Id?|
-|john|test123|John Smith|44 Ranelagh Way|London|NN1EE1|UK|>>player|
+|Create Draw|01.01.2017|
+|New player|john|registers and deposits|50|dollars|
 
 !3 When there is not enough money in the account, the ticket purchase should be refused. The ticket should not be registered, account balance and pool value remain untouched.
 
 |Purchase Ticket|
-|Player|john|Deposits|50|dollars with card|4111111111111111|and expiry date|01/18|
+|Player|john|has|50|dollars|
 |reject|Player|john|buys|10|tickets with numbers|1,3,4,5,8,10| for draw on|01.01.2017|
 |Check|Pool value for draw on|01.01.2017|is|0|
 |Check|Account balance for|john|is|50|
