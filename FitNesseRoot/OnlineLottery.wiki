@@ -4,3 +4,4 @@ PrizeCalculation
 PlayerRegistration
 PurchaseTicket
 PurchaseTicketNotEnoughMoney
+PurchaseTicketInvalidUserInputs

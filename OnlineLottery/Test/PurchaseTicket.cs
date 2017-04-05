@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Linq;
-using fit;
 using fitlibrary;
 
 namespace OnlineLottery.Test.PurchaseTicket
 {
-    public class SetUpTestEnvironment : ColumnFixture
+    public class SetUpTestEnvironment : DoFixture
     {
         internal static IPlayerManager PlayerManager;
         internal static IDrawManager DrawManager;
@@ -20,17 +19,12 @@ namespace OnlineLottery.Test.PurchaseTicket
         {
             set { DrawManager.CreateDraw(value); }
         }
-    }
 
-    public class PlayerRegisters : ColumnFixture
-    {
-        public class ExtendedPlayerRegistrationInfo : PlayerRegistrationInfo
+        public void NewPlayerRegistersAndDepositsDollars(string username, decimal amount)
         {
-            public int PlayerId() => SetUpTestEnvironment.PlayerManager.RegisterPlayer(this);
+            var pid = PlayerManager.RegisterPlayer(new PlayerRegistrationInfo {Username = username});
+            PlayerManager.DepositWithCard(pid, "11111111", "01/01", amount);
         }
-
-        private readonly ExtendedPlayerRegistrationInfo _extendedRegInfo = new ExtendedPlayerRegistrationInfo();
-        public override object GetTargetObject() => _extendedRegInfo;
     }
 
     public class PurchaseTicket : DoFixture
@@ -38,17 +32,9 @@ namespace OnlineLottery.Test.PurchaseTicket
         private readonly IDrawManager _drawManager = SetUpTestEnvironment.DrawManager;
         private readonly IPlayerManager _playerManager = SetUpTestEnvironment.PlayerManager;
 
-        public void PlayerDepositsDollarsWithCardAndExpiryDate(
-            string username, decimal amount,
-            string card, string expiry)
-        {
-            var pid = _playerManager.GetPlayer(username).PlayerId;
-            _playerManager.DepositWithCard(pid, card, expiry, amount);
-        }
-
         public bool PlayerHasDollars(string username, decimal amount) => _playerManager.GetPlayer(username).Balance == amount;
 
-        public void PlayerBuysTicketsWithNumbersForDranOn(string username, int tickets, int[] numbers, DateTime drawDate)
+        public void PlayerBuysTicketsWithNumbersForDrawOn(string username, int tickets, int[] numbers, DateTime drawDate)
         {
             PurchaseTickets(username, tickets, numbers, drawDate);
         }
