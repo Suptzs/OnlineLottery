@@ -1,12 +1,8 @@
 ---
 Test
 ---
-!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
-!define TEST_RUNNER {dotnet2\Runner.exe}
-!path C:\Users\Dany\Documents\Visual Studio 2017\Projects\OnlineLottery\OnlineLottery\bin\Release\OnlineLottery.dll
-
 !|import|
-|OnlineLottery.Test|
+|OnlineLottery.Test.PrizeCalculation|
 
 The prize pool is divided among the winners using the following distribution for winning combinations (number of correct hits out of six chosen numbers).
 Example below is for $2M payout pool.

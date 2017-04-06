@@ -1,4 +1,6 @@
+---
+Suite
+---
+!path ${RootPath}\OnlineLottery\bin\Release\OnlineLottery.dll
 !1 Online Lottery
-
-PrizeCalculation
-PlayerRegistration
+!contents -R

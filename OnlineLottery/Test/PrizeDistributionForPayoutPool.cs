@@ -1,4 +1,4 @@
-﻿namespace OnlineLottery.Test
+﻿namespace OnlineLottery.Test.PrizeCalculation
 {
     public class PrizeDistributionForPayoutPool : fit.ColumnFixture
     {

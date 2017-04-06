@@ -1,7 +1,6 @@
-﻿using System;
-using fit;
+﻿using fit;
 
-namespace OnlineLottery.Test
+namespace OnlineLottery.Test.PlayerRegistration
 {
     public class SetUpTestEnvironment : Fixture
     {
