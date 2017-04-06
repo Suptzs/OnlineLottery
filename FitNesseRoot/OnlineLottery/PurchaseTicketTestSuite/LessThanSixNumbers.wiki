@@ -1,0 +1,10 @@
+---
+Test
+---
+!3 When a user selects less than six numbers, the ticket purchase should be refused. The ticket should not be registered, account balance and pool value remain untouched.
+
+|Purchase Ticket|
+|reject|Player|${username}|buys a ticket with numbers|1,3,4,5,8| for draw on|${drawDate}|
+|Check|Pool value for draw on|${drawDate}|is|0|
+|Check|Account balance for|${username}|is|50|
+|not|Ticket with numbers|1,3,4,5,8|for|10|dollars is registered for player|${username}|for draw on|${drawDate}|

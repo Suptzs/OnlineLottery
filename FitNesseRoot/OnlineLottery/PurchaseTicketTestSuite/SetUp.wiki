@@ -1,0 +1,8 @@
+!|import|
+|OnlineLottery.Test.PurchaseTicket|
+
+!define username {Arthur}
+!define drawDate {01.01.2018}
+|Set Up Purchase Ticket Test Environment|
+|Create Draw|${drawDate}|
+|New player|${username}|registers and deposits|50|dollars|
