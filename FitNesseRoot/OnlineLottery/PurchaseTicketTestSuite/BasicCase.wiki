@@ -4,8 +4,8 @@ Test
 !3 A player registers, transfers money into the account and purchases a ticket. The ticket should be registered for the correct draw in the system, and the account balance and pool size will be adjusted for the ticket value
 
 |Purchase Ticket|
-|Player|john|has|50|dollars|
-|Player|john|buys a ticket with numbers|1,3,4,5,8,10| for draw on|01.01.2017|
-|Check|Pool value for draw on|01.01.2017|is|10|
-|Check|Account balance for|john|is|40|
-|Ticket with numbers|1,3,4,5,8,10|for|10|dollars is registered for player|john|for draw on|01.01.2017|
+|Player|${username}|has|50|dollars|
+|Player|${username}|buys a ticket with numbers|1,3,4,5,8,10| for draw on|${drawDate}|
+|Check|Pool value for draw on|${drawDate}|is|10|
+|Check|Account balance for|${username}|is|40|
+|Ticket with numbers|1,3,4,5,8,10|for|10|dollars is registered for player|${username}|for draw on|${drawDate}|

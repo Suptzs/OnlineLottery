@@ -8,11 +8,13 @@ namespace OnlineLottery
         {
             Numbers = numbers;
             Holder = player;
+            DrawDate = drawDate;
             Value = value;
         }
 
         public int[] Numbers { get; }
         public IPlayerInfo Holder { get; }
+        public DateTime DrawDate { get; }
         public decimal Value { get; }
     }
 }
