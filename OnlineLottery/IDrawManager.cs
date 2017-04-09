@@ -22,5 +22,7 @@ namespace OnlineLottery
         IDraw GetDraw(DateTime date);
         IDraw CreateDraw(DateTime drawDate);
         void PurchaseTicket(DateTime drawDate, int playerId, int[] numbers, decimal value);
+        void SettleDraw(DateTime drawDate, int[] results);
+        decimal OperatorDeductionFactor { get; }
     }
 }

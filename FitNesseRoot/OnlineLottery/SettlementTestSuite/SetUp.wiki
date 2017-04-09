@@ -1,0 +1,8 @@
+!|OnlineLottery.Test.SettlementTest|
+
+|Accounts before the draw|
+|player|balance|
+|Arthur|100|
+|Ford|100|
+|Trisha|100|
+|Marvin|100|

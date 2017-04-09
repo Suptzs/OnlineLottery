@@ -52,6 +52,7 @@
     <Compile Include="PlayerRegistrationInfo.cs" />
     <Compile Include="Test\PrizeDistributionForPayoutPool.cs" />
     <Compile Include="Test\PurchaseTicket.cs" />
+    <Compile Include="Test\SettlementTest.cs" />
     <Compile Include="Ticket.cs" />
     <Compile Include="WinningsCalculator.cs" />
   </ItemGroup>

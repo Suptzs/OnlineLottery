@@ -8,5 +8,7 @@ namespace OnlineLottery
         IPlayerInfo Holder { get; }
         DateTime DrawDate { get; }
         decimal Value { get; }
+        bool IsOpen { get; }
+        decimal Winnings { get; }
     }
 }
