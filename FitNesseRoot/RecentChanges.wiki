@@ -1,3 +1,7 @@
+|OnlineLottery.SettlementTestSuite.OneWinnerSixBalls||24:49:38 Mo, Apr 10, 2017|
+|OnlineLottery.SettlementTestSuite.TwoWinnersFourBalls||24:49:01 Mo, Apr 10, 2017|
+|OnlineLottery.SettlementTestSuite.SetUp||22:16:55 So, Apr 09, 2017|
+|OnlineLottery.SettlementTestSuite||22:13:42 So, Apr 09, 2017|
 |OnlineLottery.PurchaseTicketTestSuite.NotEnoughMoney||22:14:46 Do, Apr 06, 2017|
 |OnlineLottery.PurchaseTicketTestSuite.NegativeAmountOfTickets||22:14:26 Do, Apr 06, 2017|
 |OnlineLottery.PurchaseTicketTestSuite.MoreThanSixNumbers||22:14:04 Do, Apr 06, 2017|

@@ -1,0 +1,22 @@
+---
+Test
+---
+|Tickets in the Draw|
+|Player|Numbers|Value|
+|Ford|2,11,22,33,39,18|50|
+|Arthur|1,5,4,7,9,20|50|
+|Trisha|10,21,30,6,16,26|50|
+|Marvin|12,13,14,15,16,17|50|
+
+|Draw results are|1,5,4,20,9,7|
+
+|Prize Distribution|
+|Winning Tickets?|Prize Money?|
+|1 |68   |
+
+|Accounts after the Draw|
+|Player|Balance?|
+|Arthur|118|
+|Ford|50|
+|Trisha|50|
+|Marvin|50|
