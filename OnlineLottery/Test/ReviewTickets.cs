@@ -37,6 +37,6 @@ namespace OnlineLottery.Test
         public IList<ITicket> PlayerListsTicketsForDrawOn(string username, DateTime drawDate)
             => _drawManager.GetTickets(drawDate, _playerManager.GetPlayer(username).PlayerId);
 
-        public void SettleDrawOn(DateTime drawDate) => _drawManager.SettleDraw(drawDate, new []{1,2,3,4,5,6});
+        public void NumbersAreDrawnOn(int[] numbers, DateTime drawDate) => _drawManager.SettleDraw(drawDate, numbers);
     }
 }

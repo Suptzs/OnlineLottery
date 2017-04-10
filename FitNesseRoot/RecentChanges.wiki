@@ -1,4 +1,5 @@
-|OnlineLottery.TicketReview.SeveralTicketsOneDraw||22:25:42 Mo, Apr 10, 2017|
+|OnlineLottery.TicketReview.SeveralTicketsOneDraw||23:18:36 Mo, Apr 10, 2017|
+|OnlineLottery.TicketReview.WinningsRecordedCorrectly||22:36:05 Mo, Apr 10, 2017|
 |OnlineLottery.TicketReview.SeveralTicketsTwoDraws||22:19:41 Mo, Apr 10, 2017|
 |OnlineLottery.TicketReview.TwoAccountsOneDraw||22:05:37 Mo, Apr 10, 2017|
 |OnlineLottery.TicketReview.SetUp||21:11:28 Mo, Apr 10, 2017|
