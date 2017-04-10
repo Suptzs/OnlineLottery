@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using fitSharp.Fit.Model;
 
 namespace OnlineLottery
 {
@@ -39,6 +40,18 @@ namespace OnlineLottery
             _playerManager.AdjustBalance(playerId, -value);
             d.AddTicket(new Ticket(player, drawDate, numbers, value));
         }
+
+        public IList<ITicket> GetOpenTickets(int playerId)
+            => (from draw in _draws
+                from ticket in draw.Value.Tickets
+                where ticket.Holder.PlayerId == playerId && ticket.IsOpen
+                select ticket).ToList();
+
+        public IList<ITicket> GetTickets(DateTime drawDate, int playerId)
+            => (from draw in _draws
+                from ticket in draw.Value.Tickets
+                where ticket.Holder.PlayerId == playerId && ticket.DrawDate == drawDate
+                select ticket).ToList();
 
         public void SettleDraw(DateTime drawDate, int[] results)
         {

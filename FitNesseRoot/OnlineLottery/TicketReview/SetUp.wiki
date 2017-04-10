@@ -1,0 +1,5 @@
+!|OnlineLottery.Test.ReviewTickets|
+
+|Draw on |01.01.2017| is open|
+
+|Player|john|opens account with|100|dollars|

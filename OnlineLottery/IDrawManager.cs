@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OnlineLottery
 {
@@ -23,6 +24,8 @@ namespace OnlineLottery
         IDraw CreateDraw(DateTime drawDate);
         void PurchaseTicket(DateTime drawDate, int playerId, int[] numbers, decimal value);
         void SettleDraw(DateTime drawDate, int[] results);
+        IList<ITicket> GetOpenTickets(int playerId);
         decimal OperatorDeductionFactor { get; }
+        IList<ITicket> GetTickets(DateTime drawDate, int playerId);
     }
 }

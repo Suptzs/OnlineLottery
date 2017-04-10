@@ -1,0 +1,24 @@
+---
+Test
+---
+|Draw on|02.01.2017|is open|
+
+|Draw on|03.01.2017|is open|
+
+|Player|john|buys a ticket with numbers|1,3,4,5,8,10|for draw on|02.01.2017|
+
+|Player|john|buys a ticket with numbers|1,3,4,5,8,10|for draw on|01.01.2017|
+
+|Player|john|buys|5|tickets with numbers|3,6,9,12,15,18|for draw on|01.01.2017|
+
+|Player|john|lists tickets for draw on|01.01.2017|
+|value|numbers|
+|10|1,3,4,5,8,10|
+|50|3,6,9,12,15,18|
+
+|Player|john|lists tickets for draw on|02.01.2017|
+|value|numbers|
+|10|1,3,4,5,8,10|
+
+|Player|john|lists tickets for draw on|03.01.2017|
+|value|numbers|
