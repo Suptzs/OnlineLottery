@@ -1,0 +1,16 @@
+---
+Test
+---
+|Player|tom|opens account with|50|dollars|
+
+|Player|john|buys a ticket with numbers|1,3,4,5,8,10|for draw on|01/01/2017|
+
+|Player|tom|buys a ticket with numbers|2,4,5,8,10,12|for draw on|01/01/2017|
+
+|Player|john|lists tickets for draw on|01/01/2017|
+|value|numbers|
+|10|1,3,4,5,8,10|
+
+|Player|tom|lists tickets for draw on|01/01/2017|
+|value|numbers|
+|10|2,4,5,8,10,12|
